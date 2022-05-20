@@ -1,0 +1,77 @@
+﻿<div class="row">
+    <input type="hidden" id="ReceiverId" value="@ViewBag.ReceiverId" />
+    <section id="group" class="col-md-3">
+        <div class="container">
+            <div class="row pt-3">
+                <select id="groupSelector">
+                    <option value="all">Everyone</option>
+                    <option value="myself">Myself</option>
+                    <option value="privateGroup">Private Group</option>
+                </select>
+                <button class="btn btn-success" id="joinGroup" value="joinGroup">Join Group</button>
+                @*<a href="/myself" class="userChat">
+                    <div class="group-item">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <img src="/images/defPerson.jpg">
+                            </div>
+                            <div class="col-8">
+                                <h4>Myself</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="/privateGroup" id="privateGroup" class="userChat">
+                    <div class="group-item">
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <img src="/images/defPerson.jpg">
+                            </div>
+                            <div class="col-8">
+                                <h4>Chat</h4>
+                            </div>
+                        </div>
+                    </div>
+                </a>*@
+            </div>
+        </div>
+    </section>
+    <section id="messages" class="col-md-9">
+        <div id="chat-section">
+            <div class="container">
+                <div class="col-md-7" id="chat-wrapper">
+                    @*@foreach (Message item in Model.Messages)
+                    {
+                        <div class="chat-item">
+                            <p class="name">@item.AppUserName</p>
+                            <p class="text">@item.Text</p>
+                            <div class="text-end">
+                                <span class="time">@item.Time.ToString()</span>
+                            </div>
+                        </div>
+                    }*@
+                </div>
+            </div>
+        </div>
+        <div id="message-section">
+            <div class="container">
+                <div class="message">
+                    <div class="row">
+                        <div class="col-md-11">
+                            <div class="col">
+                                <input type="text" id="messageInput" class="form-control rounded-pill" placeholder="Write your message...">
+                            </div>
+                        </div>
+                        <div class="col-md-1">
+                            <button id="sendButton" class="btn btn-success rounded-circle">
+                                <i class="bi bi-chevron-double-right text-light"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+<input type="hidden" id="User" value="@User.Identity.Name" />

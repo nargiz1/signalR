@@ -1,0 +1,71 @@
+body{
+    font-family: Montserrat, sanserif;
+    overflow-x: hidden;
+}
+#group{
+    background-color: #B5C9C3;
+    position: sticky;
+    top: 0;
+    height: 90vh;
+}
+#group a{
+    display:block;
+    text-decoration:none!important;
+}
+#group .group-item{
+    background-color: #cbdad5;
+    padding: 10px 15px;
+    border-radius: 30px;
+    color: rgb(44, 44, 44);
+    transition: all .3s ease;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+#group .group-item:hover{
+    transform: scale(1.05);
+}
+#group .group-item.active{
+    background-color: #96c4b6;
+    transform: scale(1.05);
+}
+#group .group-item img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#messages{
+    padding-left: 0px;
+}
+#chat-section{
+    min-height: 100vh;
+    background-image: url(https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png);
+    padding-bottom: 70px;
+    padding-top: 15px;
+}
+#chat-section .chat-item{
+    background-color: #B5C9C3;
+    padding: 10px 20px;
+    border-radius: 30px 50px 50px 0px;
+    margin-bottom: 15px;
+}
+#chat-section .chat-item .time{
+    font-size: 15px;
+    margin-right: 26px;
+    color: rgb(170, 169, 169);
+}
+#chat-section .chat-item .name{
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+#chat-section .chat-item .text{
+    margin-bottom: 0px;
+}
+#message-section{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 15px 0px;
+    background-color: #B5C9C3;
+}
